@@ -11,10 +11,10 @@
     <div class="main-container">
         <div class="container">
            
-                < class="game-ico" src="Hamster-Kombat.png" style="" alt="Game Icon">
+                < class="game-ico" src="https://github.com/sinazh/sinazh.github.io/blob/main/Hamster-Kombat.png" style="" alt="Game Icon">
             
             <h1>Hamster Kombat</h1>
-			 <label for="gameSelect" id="gameSelectLabel">< src="game.png" style="width: 20px; height: 20px; margin-top: 1;" alt="Game Icon"> Select a game to generate a key</label>
+			 <label for="gameSelect" id="gameSelectLabel">< src="https://github.com/sinazh/sinazh.github.io/blob/main/game.png" style="width: 20px; height: 20px; margin-top: 1;" alt="Game Icon"> Select a game to generate a key</label>
             <select id="gameSelect" onchange="changeGameImage()">
                 <option value="default">- - - - -</option>
                 <option value="MyCloneArmy">My Clone Army</option>
@@ -22,7 +22,7 @@
                 <option value="TrainMiner">Train Miner</option>
                 <option value="BikeRide3D">Bike Ride 3D</option>
             </select>
-            < id="gameImage" src="/hamster_pirate.jpg"  class="game-" alt="Game Image" style="">
+            < id="gameImage" src="https://github.com/sinazh/sinazh.github.io/blob/main/hamster_pirate.jpg"  class="game-" alt="Game Image" style="">
 
             <label for="keyCountSelect" id="keyCountLabel">
                 < src="hamster_key.png" style="width: 20px; height: 20px; margin-top: 1;" alt="Game Icon">Select the number of keys to generate:
@@ -60,11 +60,11 @@
             const gameSelect = document.getElementById('gameSelect');
             const gameImage = document.getElementById('gameImage');
             const gameImages = {
-                'default': 'hamster_pirate.jpg',
-                'MyCloneArmy': 'my_clone_army.jpeg',
-                'ChainCube2048': 'chain_cube.jpeg',
-                'TrainMiner': 'train_miner.jpeg',
-                'BikeRide3D': 'bikeride.jpeg'
+                'default': 'https://github.com/sinazh/sinazh.github.io/blob/main/hamster_pirate.jpg',
+                'MyCloneArmy': 'https://github.com/sinazh/sinazh.github.io/blob/main/my_clone_army.jpeg',
+                'ChainCube2048': 'https://github.com/sinazh/sinazh.github.io/blob/main/chain_cube.jpeg',
+                'TrainMiner': 'https://github.com/sinazh/sinazh.github.io/blob/main/train_miner.jpeg',
+                'BikeRide3D': 'https://github.com/sinazh/sinazh.github.io/blob/main/bikeride.jpeg'
             };
             gameImage.src = gameImages[gameSelect.value];
         }
