@@ -19,6 +19,18 @@ const gamePromoConfigs = {
     },
 };
 
+let currentAppConfig = gamePromoConfigs.MyCloneArmy;
+var keygenActive = false;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const gameSelect = document.getElementById('gameSelect');
+
+    gameSelect.addEventListener('change', () => {
+        const selectedGame = gameSelect.value;
+        currentAppConfig = gamePromoConfigs[selectedGame];
+    });
+});
+
 document.getElementById('startBtn').addEventListener('click', async () => {
     const startBtn = document.getElementById('startBtn');
     const keyCountSelect = document.getElementById('keyCountSelect');
